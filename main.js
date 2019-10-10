@@ -25,3 +25,16 @@ function removesLastLi() {
 
 removesLastLi();
 
+function appendToArgument(element){
+    const toBeAppended = document.querySelector(element);
+    toBeAppended.appendChild(ul)
+}
+
+const h3 = 'hello';
+appendToArgument(h3);
+
+function modifyImage(image){
+    image.style.height = '30px'
+
+}
+
