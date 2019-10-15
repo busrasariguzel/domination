@@ -77,9 +77,9 @@ const theNewText = creatingNewLi('hello world');
 appendToArgument(theNewText);
 
 function creatingNewHeader(headerSize,someText){
-    const newH = document.createElement(headerSize);
+    const newH = document.createElement('h' + headerSize);
     newH.innerHTML = someText;
     return newH;
 }
-const appendingNewHeader= creatingNewHeader('h3', 'I hate mondays');
+const appendingNewHeader= creatingNewHeader('3', 'I hate mondays');
 appendToArgument(appendingNewHeader);
