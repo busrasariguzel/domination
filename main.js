@@ -26,15 +26,71 @@ function removesLastLi() {
 removesLastLi();
 
 function appendToArgument(element){
-    const toBeAppended = document.querySelector(element);
-    toBeAppended.appendChild(ul)
+    const toBeAppended = document.querySelector('ul');
+    toBeAppended.appendChild(element);
 }
+    // function appendToList(element){
+    //     const list = document.querySelector('ul');
+    //     list.appendChild(element);
 
-const h3 = 'hello';
-appendToArgument(h3);
+
+    // const heading = document.createElement('h1');
+    // heading.innerText = 'TEST'
+    // appendToList(heading);
+
+
+const newImage = document.createElement('img');
+newImage.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvmdG435HxyF0e1DP1IBVos10zTwuNJ0p9M_iYDzlYWup6AgfV6w'
+// const newArguments = document.querySelector('#arguments')
+appendToArgument(newImage);
+
+
 
 function modifyImage(image){
     image.style.height = '30px'
 
 }
 
+const newSmallImage = document.querySelector('img')
+modifyImage(newSmallImage);
+
+function givesClass(element){
+    const newElementWithClass= document.querySelector(element);
+    newElementWithClass.className = 'invisible'
+
+}
+const newH1 = document.querySelector('h1');
+givesClass('h1');
+
+// function giveColorToElement(id,color){
+//     const element = document.querySelector(id)
+//     element.style.color = color;
+
+// }
+
+function settingFontToId(fontSize, id){
+    const element = document.querySelector(id)
+    element.style.fontSize = fontSize;
+}
+
+
+settingFontToId('xx-large', '#heading')
+
+//  part 3 
+
+function creatingNewLi(str){
+    const theNewLi = document.createElement('li');
+    theNewLi.innerText = str
+    return theNewLi;
+}
+
+const theNewText = creatingNewLi('hello world');
+appendToArgument(theNewText);
+
+function creatingNewHeader(headerSize,someText){
+    const newH = document.createElement('headerSize');
+    newH.innerHTML = someText;
+    return newH;
+}
+const appendingNewHeader= creatingNewHeader('h3', 'I hate mondays');
+appendToArgument(appendingNewHeader);
