@@ -29,14 +29,7 @@ function appendToArgument(element){
     const toBeAppended = document.querySelector('ul');
     toBeAppended.appendChild(element);
 }
-    // function appendToList(element){
-    //     const list = document.querySelector('ul');
-    //     list.appendChild(element);
 
-
-    // const heading = document.createElement('h1');
-    // heading.innerText = 'TEST'
-    // appendToList(heading);
 
 
 const newImage = document.createElement('img');
@@ -62,11 +55,7 @@ function givesClass(element){
 const newH1 = document.querySelector('h1');
 givesClass('h1');
 
-// function giveColorToElement(id,color){
-//     const element = document.querySelector(id)
-//     element.style.color = color;
 
-// }
 
 function settingFontToId(fontSize, id){
     const element = document.querySelector(id)
@@ -88,7 +77,7 @@ const theNewText = creatingNewLi('hello world');
 appendToArgument(theNewText);
 
 function creatingNewHeader(headerSize,someText){
-    const newH = document.createElement('headerSize');
+    const newH = document.createElement(headerSize);
     newH.innerHTML = someText;
     return newH;
 }
